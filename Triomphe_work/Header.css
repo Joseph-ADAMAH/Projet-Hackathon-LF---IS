@@ -1,12 +1,31 @@
-.header .logo-nav {
-    background-color: #0F172A;
-    height: 100px;
-
+body{
+    margin: 0;
+    padding: 0;
 }
 
+header{
+    height: auto;
+    padding:0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header i.icon{
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    z-index: 10;
+    display: none;
+    color: #7cb62f;
+}
 .header .logo-nav ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
@@ -17,6 +36,7 @@
 }
 
 .logo-nav h2{
+    padding-top: 20px;
     font-size: 32px;
     color: white;
 }
@@ -37,12 +57,45 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
+    padding: 15px 0;
+    margin: 9px 0;
     display: block;
+    transition: all 0.4s ease-in-out;
 
 }
 
 .header .logo-nav ul li a:hover{
      color: blue;
+
+}
+
+@media (max-width:810px) {
+
+    header i.icon{
+        display: block;
+    }
+
+    .header .logo-nav ul{
+        display:block ;
+        text-align: center;
+        padding: 0;
+    }
+
+    .header .logo-nav ul .list{
+        display:none ;
+        text-align: center;
+        padding: 0;
+    }
+
+    .logo-nav h2{
+        margin: 0;
+        padding: 30px;
+        font-size: 32px;
+    }
+    header{
+        margin: 0;
+        background: #0F172A;
+    }
 
 }
 
@@ -64,14 +117,27 @@
 }
 
 .home-content .home-title{
-    font-size: 55px;
+    font-size: 35px;
     margin-bottom: 20px;
     color: white;
 }
 
 .home-content .home-desc{
-    font-size: 35px;
+    font-size: 25px;
     color: white;
+}
+
+@media (max-width: 575px){
+    .home-content .home-title{
+        font-size: 25px;
+    }
+    .home-content .home-desc{
+        font-size: 18px;
+    }
+
+    .btn{
+        margin: 20px;
+    }
 }
 
 .overlay{
@@ -84,22 +150,19 @@
     z-index: 1;
 }
 
-@media (max-width = 575px) {
-    .home-content .home-title{
-        font-size: 35px;
-    }
-
-    .home-content .home-desc{
-        font-size: 20px;
-    }
+.sticky{
+    background-color: #0F172A;
+    color: #fff;
 }
 
+
 .btn {
-    font-size: 30px;
+    font-size: 20px;
     background: #7cb62f;
     border: 1px solid #7cb62f;
     border-radius: 5px;
-    margin: 0 10px ;
+    margin: 7px 10px ;
+    width: 150px;
     font-family: lucida sans;
     text-shadow:2px 1px 2px;
     box-shadow:2px -2px 3px 0px;
