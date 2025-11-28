@@ -3,6 +3,11 @@ body{
     padding: 0;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
+
 header{
     height: auto;
     padding:0;
@@ -138,6 +143,15 @@ header i.icon{
     .btn{
         margin: 20px;
     }
+
+    .outils .outils-list{
+        display: block;
+    }
+
+    .outils .outils-list .list{
+        margin: 50px auto;
+        width: 300px;
+    }
 }
 
 .overlay{
@@ -150,11 +164,12 @@ header i.icon{
     z-index: 1;
 }
 
+/* Ajouter dans JS */
 .sticky{
     background-color: #0F172A;
     color: #fff;
 }
-
+/* Fin */
 
 .btn {
     font-size: 20px;
@@ -229,6 +244,7 @@ header i.icon{
 }
 
 @media (max-width:1000px){
+
     .about-desc ul{
         display: block;
         text-align: center;
@@ -240,4 +256,48 @@ header i.icon{
     }
 
 
+}
+
+@media (min-width: 1000px){
+
+     .outils ul .list{
+        margin: 20px;
+
+    }
+}
+
+/* Outils */
+.outils ul{
+    display: flex;
+    text-align: center;
+}
+.outils ul .list{
+    list-style: none;
+    height: 300px;
+    width: 100%;
+    background: #ddd;
+    margin: 10px;
+    border-radius: 7px;
+
+}
+
+.outils ul .list img{
+    height: 150px;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+    background: #fff;
+}
+
+.game{
+    height: 500px;
+}
+
+.game-title h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.game-title p{
+    text-align: center;
 }
