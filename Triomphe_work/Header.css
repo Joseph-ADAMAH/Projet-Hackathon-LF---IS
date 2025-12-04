@@ -73,8 +73,7 @@ header i.icon{
 }
 
 .header .logo-nav ul li a:hover{
-     color: blue;
-
+    color: blue;
 }
 
 @media (max-width:810px) {
@@ -110,7 +109,7 @@ header i.icon{
 .home{
     height: 650px;
     width: 100%;
-    background: url(./background_img.jpg);
+    background: url(/BackImg.png);
     background-size: cover;
     background-position: center;
     position: relative;

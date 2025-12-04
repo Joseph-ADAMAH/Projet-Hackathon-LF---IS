@@ -1,0 +1,66 @@
+
+footer {
+  background-color: #0F172A;
+  padding: 20px;
+  text-align: center;
+  height:500px;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  padding:  0.1%;
+}
+footer p{
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+footer section {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  margin: 0 1%;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.lien {
+  margin-top: 10px;
+}
+
+.imageLien {
+  width: 30px;
+  margin: 0 5px;
+  border: 10px;
+}
+#Data{
+display: inline-block;
+height: 10rex;
+}
+footer #Date p{
+    padding: 5px;
+    margin:0vmax;
+    color: white;
+}
+#PhotBless{
+    height: 130pX;
+    width: 100px;
+}
+#MotDeBasDePage{
+  text-align: left;
+  font-size: 70%;
+  padding-left: 0cap;
+  margin-right: 10%;
+
+}
+#MotDeBasDePageDroit{
+  text-align:right;
+  font-size: 70%;
+  margin-left: 40%;
+  padding-right: 0cap;
+}

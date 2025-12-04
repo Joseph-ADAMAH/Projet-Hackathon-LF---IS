@@ -1,0 +1,399 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    height: auto;
+    padding:0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header i.icon{
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    z-index: 10;
+    display: none;
+    color: #7cb62f;
+}
+.header .logo-nav ul{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.header .logo-nav ul li{
+    margin: auto;
+
+}
+
+.logo-nav h2{
+    padding-top: 20px;
+    font-size: 32px;
+    color: white;
+}
+
+
+.header .logo-nav ul li img{
+    border-radius: 50px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    z-index: 20;
+    display: none;
+    
+
+}
+
+.header .logo-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+    margin: 9px 0;
+    display: block;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.header .logo-nav ul li a:hover{
+    color: greenyellow;
+
+}
+
+@media (max-width:810px) {
+
+    header i.icon{
+        display: block;
+    }
+
+    .header .logo-nav ul{
+        display:block ;
+        text-align: center;
+        padding: 0;
+    }
+
+    .header .logo-nav ul .list{
+        display:none ;
+        text-align: center;
+        padding: 0;
+    }
+
+    .logo-nav h2{
+        margin: 0;
+        padding: 30px;
+        font-size: 32px;
+    }
+    header{
+        margin: 0;
+        background: #0F172A;
+    }
+
+}
+
+.home{
+    height: 650px;
+    width: 100%;
+    background: url(/BackImg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-content .home-title{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.home-content .home-desc{
+    font-size: 25px;
+    color: white;
+}
+
+@media (max-width: 575px){
+    .home-content .home-title{
+        font-size: 25px;
+    }
+    .home-content .home-desc{
+        font-size: 18px;
+    }
+
+    .btn{
+        margin: 20px;
+    }
+
+    .outils .outils-list{
+        display: block;
+    }
+
+    .outils .outils-list .list{
+        margin: 50px auto;
+        width: 300px;
+    }
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Ajouter dans JS */
+.sticky{
+    background-color: #0F172A;
+    color: #fff;
+}
+/* Fin */
+
+.btn {
+    font-size: 20px;
+    background: #7cb62f;
+    border: 1px solid #7cb62f;
+    border-radius: 5px;
+    margin: 10px 10px ;
+    width: 150px;
+    font-family: lucida sans;
+    text-shadow:2px 1px 2px;
+    box-shadow:2px -2px 3px 0px;
+    text-align: center;
+}
+
+.about .about-header h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.about .about-header p{
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.about-desc ul{
+    display: flex;
+}
+
+.about-desc ul li p{
+    font-size: 20px;
+}
+
+.about-desc ul img{
+    width: 600px;
+    height: 400px;
+    border-radius: 3px;
+}
+
+.line{
+    width: 170px;
+    height: 3px;
+    background-color: #ddd;
+    margin: 0 auto;
+}
+
+.line span{
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #7cb62f;
+    margin: auto;
+    position: relative;
+    bottom: 0.5px;
+
+}
+
+.outil-header h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+
+.outil-header p{
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width:1000px){
+
+    .about-desc ul{
+        display: block;
+        text-align: center;
+    }
+
+    .about-desc ul img{
+        width: 90%;
+        margin: 0;
+    }
+
+    .game-desc-tof .desc-tof{
+        display: block;
+        text-align: center;
+    }
+
+    .game-desc-tof .desc-tof img{
+        width: 90%;
+        margin: auto;
+    }
+
+
+}
+
+@media (min-width: 1000px){
+
+    .outils .outils-list .list{
+        margin: 40px;
+        width: 95%;
+
+    }
+
+    .outils .outils-list .list img{
+        height: 200px;
+    }
+}
+
+/* Outils */
+.outils ul{
+    display: flex;
+    text-align: center;
+}
+.outils ul .list{
+    list-style: none;
+    height: 300px;
+    width: 100%;
+    background: #ddd;
+    margin: 10px;
+    border-radius: 7px;
+
+}
+
+.outils ul .list img{
+    height: 150px;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+    background: #fff;
+}
+
+.game{
+    height: 500px;
+    margin-bottom: 80px;
+}
+
+.game-title h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.game-title p{
+    text-align: center;
+}
+
+.game-desc-tof ul{
+    display: flex;
+}
+
+.game-desc-tof ul li p{
+    font-size: 20px;
+}
+
+.game-desc-tof ul img{
+    width: 600px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #0F172A;
+    padding: 20px;
+    text-align: center;
+    height:350px;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    padding:  0.1%;
+}
+footer p{
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+footer section {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    margin: 0 1%;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.lien {
+    margin-top: 10px;
+}
+
+.imageLien {
+    width: 30px;
+    margin: 0 5px;
+    border: 10px;
+}
+#Data{
+display: inline-block;
+height: 10rex;
+}
+footer #Date p{
+    padding: 5px;
+    margin:0vmax;
+    color: white;
+}
+#PhotBless{
+    height: 130pX;
+    width: 100px;
+}
+#MotDeBasDePage{
+    text-align: left;
+    font-size: 70%;
+    padding-left: 0cap;
+    margin-right: 10%;
+
+}
+#MotDeBasDePageDroit{
+    text-align:right;
+    font-size: 70%;
+    margin-left: 40%;
+    padding-right: 0cap;
+}
